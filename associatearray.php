@@ -1,19 +1,20 @@
+<!-- Create a associative array with values and sort in ascending and descending order -->
 <html>
 <body>
 <?php
-$age=array("peter"=>35,"ben"=>37,"joe"=>43);
-arsort($age);
-foreach($age as $x=>$x_value)
-{
-echo "key=" .$x.",value=".$x_value;
-echo "<br>";
-}
-krsort($age);
-foreach($age as $y=>$y_value)
-{
-echo "key=" .$y.",value=".$y_value;
-echo "<br>";
-}
+ $age = array("Peter" => 35, "Ben" => 37, "Joe" => 43);
+ echo "Arsort<br>";
+ arsort($age);
+ foreach($age as $x => $value){
+ 	echo "Key = ".$x.", Value = ".$value."<br>";
+ }
+
+ echo "<br><br>Krsort<br>";
+ krsort($age);
+ foreach($age as $y => $value){
+ 	echo "Key = ".$y.", Value = ".$value."<br>";
+ }
+
 ?>
 </body>
 </html>
